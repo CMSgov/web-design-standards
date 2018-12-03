@@ -223,7 +223,7 @@ dfn {
   margin-bottom: 0;
 }
 
-.usa-background-dark {
+@mixin background-dark {
   background-color: $color-gray-dark;
 
   p,
@@ -238,6 +238,10 @@ dfn {
       color: $color-white;
     }
   }
+}
+
+.usa-background-dark {
+  @include background-dark;
 }
 
 .usa-text-small {
